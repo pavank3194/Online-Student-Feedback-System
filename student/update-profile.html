@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback System</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/studentlogin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="home_line_1" style="background-color: #337ab7;position: fixed;width: 100%; padding-top: 15px; padding-bottom: 15px ;">
+        <a href="#" style="padding: 20px 20px; font-size: larger; font-weight: bold; color: white;">Hello Pavan Kalyan</a>
+        <div class="home_links" style="float: right;">
+            <a class="home-1" href="../login/student.html">Logout  </a>
+        </div>
+        
+    </div>
+    <div class="dashboard" style="padding-top: 50px;">
+        <div id="dashboard-1" >
+                <p style="background-color: #337ab7; box-sizing: border-box; padding-top: 10px; padding-bottom: 10px; padding-left: 5px; width: 200px;">Dashboard</p>
+                <!-- this image refers to the profile of the user -->
+                <a href="./student-login.html"><img src="../imgs/mail-dashboard-1.png" alt="mail" class="dash-mail-img"></a>
+                <p class="student-dashboard-content-1"><a href="update-password.html"> update password</a></p>
+                <p class="student-dashboard-content-2"><a href="update-profile.html">update profile</a></p>
+                <p class="student-dashboard-content-3"><a href="update-feedback.html">Feedback</a></p>
+        </div>
+
+        <div id="dashboard-2">
+            <center>
+                <h1>Update profile</h1>
+            </center>
+            <form method="post" style="padding-top: 50px; padding-left:50px; border: none;">
+                <!-- <table class="table table-bordered" style="border: none;"> -->   
+            <span><label for="update-profile-name">Enter Your Name :</label></span>
+            <input type="password" name="update-profile-name" id="update-profile-name" >
+            <br><br>
+            <span><label for="update-profile-mail">Enter Your Email :</label></span>
+            <input type="password" name="update-profile-mail" id="update-profile-mail" >
+            <br><br>
+            <span><label for="update-profile-phone">Enter Your Mobile :</label></span>
+            <input type="password" name="update-profile-phone" id="update-profile-phone" >
+            <br><br>
+            <p id="password-error" style="color: red; margin-left: 360px;"></p>
+            <p id="password-update" style="color: green; margin-left: 360px;"></p>
+            <span >
+                <label for="dob">Your DOB:</label>
+                <input type="date" name="dob" id="dob">
+                    
+                </span>
+            <br><br>  
+            <span>Select Your Gender :</span>
+            <span id="gender">
+                    <input type="radio"  name="gen" value="m"/> Male
+                    <input type="radio"  name="gen" value="f"/>	Female
+            </span>
+
+            <br><br>
+            <span>Choose Your Hobbies</span>
+                <span id="hobbies">
+                        <input value="reading" type="checkbox" name="hob[]"/>  Reading
+                        <input value="singin"  type="checkbox" name="hob[]"/>  Singing
+                        <input value="playing" type="checkbox" name="hob[]"/>  Playing
+                </span>
+                    
+                <br><br>
+                <!-- <span>Your DOB :</span> -->
+                <br><br>
+                
+    <span style="margin-left: 200px;">  
+        <input type="submit" class="btn-default" value="Update My Profile" name="update" style="background-color: rgb(27, 184, 27); border:none;padding:10px; border-radius:5px;"/>
+        <input type="reset" class="btn btn-default" value="Reset" style="background-color: rgb(27, 184, 27); border:none;padding:10px; border-radius:5px;"/>
+</span>         
+            </form>
+                
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
